@@ -45,6 +45,14 @@
 	height: 100%;
 }
 
+.area3 {
+	transition: all 0.3s;
+}
+
+.area p {
+	display: none;
+}
+
 .area:nth-child(3) {
 	grid-row-start: span 2;
 }
@@ -82,6 +90,7 @@
 
 @media screen and (min-width: 1024px) {
 	.container {
+		width: 70%;
 		padding: 20px 0;
 		height: 100vh;
 	}
@@ -113,6 +122,17 @@
 		grid-column-end: 4;
 		grid-row-start: 1;
 		grid-row-end: 3;
+	}
+
+	.area3:hover {
+		opacity: 0.5;
+	}
+
+	.area3 p {
+		display: absolute;
+		top: 50%;
+		right: 50%;
+		z-index: 2;
 	}
 
 	.area:nth-child(6) {
